@@ -1,0 +1,17 @@
+# Powerlevel10k の instant prompt。先頭に置く必要がある（入力を求める処理はこれより前に書く）。
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# 設定の本体はモジュールに分けてある。ここでは読み込むだけで、設定は書かない。
+#   ~/.config/zsh/rc.d/    リポジトリで管理するモジュール
+#   ~/.config/zsh/local.d/ PC 固有・秘密のモジュール（リポジトリ外）
+# 2 つのディレクトリのファイルを、ファイル名の番号順に混ぜて読む。同じ名前があれば local.d を優先する。
+typeset -A _zsh_modules
+for _f in ~/.config/zsh/{rc,local}.d/*.zsh(N); do
+  _zsh_modules[${_f:t}]=$_f
+done
+for _f in ${(ok)_zsh_modules}; do
+  source "$_zsh_modules[$_f]"
+done
+unset _zsh_modules _f
