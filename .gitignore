@@ -1,0 +1,4 @@
+.DS_Store
+*.vsix
+05-secrets.zsh
+terminal/zsh/local.d/*.zsh
