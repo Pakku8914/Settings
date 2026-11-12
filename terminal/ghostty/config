@@ -1,0 +1,35 @@
+# -- フォント --
+font-size = 14
+
+# -- テーマ --
+theme = Tinacious Design Dark
+# === Favorite theme List ===
+# Monokai Soda
+# Night Lion V1
+# Night Lion
+# Night Owl
+# Nocturnal Winter
+# Obsidian
+# One Double Dark
+# Paul Millr
+# Rapture
+# Raycast Dark
+# Selenized Dark
+# Selenized Black
+# Tinacious Design Dark
+
+# -- 言語 --
+language = ja
+
+window-padding-x = 10
+window-padding-y = 5
+window-padding-balance = true
+
+# nvim のターミナルタブ操作(Alt+T/W/J 等)を Option キーで受けるため
+macos-option-as-alt = true
+
+# nvim側でZedのcmd+j/cmd+shift+jと同じ挙動(ターミナルパネルのフォーカス切替/表示トグル)を
+# 使えるようにするため、Ghostty標準のCmd+J/Cmd+Shift+Jの予約を解除する
+# (nvim/lua/mappings.lua の <D-j>/<D-J> マッピングと対応)
+keybind = cmd+j=unbind
+keybind = cmd+shift+j=unbind
