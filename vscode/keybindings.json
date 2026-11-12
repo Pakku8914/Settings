@@ -1,0 +1,216 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    {
+        "key": "cmd+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "alt+cmd+n",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus && foldersViewVisible"
+    },
+    {
+        "key": "alt+f12",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "cmd+n",
+        "command": "welcome.showNewFileEntries"
+    },
+    {
+        "key": "ctrl+alt+cmd+n",
+        "command": "-welcome.showNewFileEntries"
+    },
+    {
+        "key": "cmd+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "cmd+4",
+        "command": "-workbench.action.focusFourthEditorGroup"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findWithSelection"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+j",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "cmd+k",
+        "command": "claudeVSCodeSidebarSecondary.focus",
+        "when": "!(panelVisible && activePanel == 'workbench.view.extension.claude-sidebar-secondary' && !editorFocus && !sideBarFocus && !auxiliaryBarFocus)"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "panelVisible && activePanel == 'workbench.view.extension.claude-sidebar-secondary' && !editorFocus && !sideBarFocus && !auxiliaryBarFocus"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "claudeVSCodeSidebarSecondary.focus",
+        "when": "!(panelVisible && activePanel == 'workbench.view.extension.claude-sidebar-secondary')"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "workbench.action.closePanel",
+        "when": "panelVisible && activePanel == 'workbench.view.extension.claude-sidebar-secondary'"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.files.newUntitledFile",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+d",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+d",
+        "command": "workbench.action.splitEditorRight",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "workbench.action.splitEditorDown",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "-workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.focusNextGroup",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "workbench.action.nextEditor",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "workbench.action.previousEditor",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "workbench.action.increaseViewHeight"
+    },
+    {
+        "key": "alt+down",
+        "command": "workbench.action.decreaseViewHeight"
+    },
+    {
+        "key": "alt+left",
+        "command": "workbench.action.decreaseViewWidth"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.increaseViewWidth"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "!inQuickOpen && !listFocus && !suggestWidgetVisible && neovim.mode != insert && neovim.mode != cmdline"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+ctrl+n",
+        "command": "workbench.action.toggleSidebarVisibility"
+    }
+]
