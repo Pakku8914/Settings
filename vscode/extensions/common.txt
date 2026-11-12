@@ -1,0 +1,10 @@
+# 言語に依存しない拡張（どの PC にも入れる）。テーマ拡張 nvim-tinacious-design-dark は別途ソースから入れる
+anthropic.claude-code
+asvetliakov.vscode-neovim
+chadalen.vscode-jetbrains-icon-theme
+mechatroner.rainbow-csv
+ms-ceintl.vscode-language-pack-ja
+oderwat.indent-rainbow
+redhat.vscode-yaml                  # settings.json で docker-compose のフォーマッタに指定している
+shardulm94.trailing-spaces
+streetsidesoftware.code-spell-checker
