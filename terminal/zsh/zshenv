@@ -1,0 +1,10 @@
+# すべての zsh（スクリプトや `zsh -c` を含む）が最初に読むファイル。
+# 毎回読まれるので、値を代入するだけの汎用の環境変数に限る（コマンドは実行しない）。
+# PATH はここに書かない。macOS ではログインシェルで /etc/zprofile の path_helper が並べ替えてしまうため、
+# rc.d/00-path.zsh で設定する。ツール固有の環境変数（FZF_* など）はそのツールのモジュールに置く。
+
+export LANG=ja_JP.UTF-8
+
+# vi モード中に Esc → v で、編集中のコマンドラインを nvim で開ける
+export EDITOR=nvim
+export VISUAL=nvim
