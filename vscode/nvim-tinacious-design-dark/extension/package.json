@@ -1,0 +1,22 @@
+{
+	"name": "nvim-tinacious-design-dark",
+	"displayName": "Tinacious Design Dark (nvim)",
+	"description": "VSCode port of the NvChad/base46 'Tinacious Design Dark' theme used in nvim",
+	"version": "1.0.0",
+	"publisher": "local",
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Tinacious Design Dark (nvim)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/nvim-tinacious-design-dark-color-theme.json"
+			}
+		]
+	}
+}
