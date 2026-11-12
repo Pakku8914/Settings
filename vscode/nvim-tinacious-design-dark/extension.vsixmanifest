@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="nvim-tinacious-design-dark" Version="1.0.0" Publisher="local" />
+    <DisplayName>Tinacious Design Dark (nvim)</DisplayName>
+    <Description xml:space="preserve">VSCode port of the NvChad Tinacious Design Dark theme</Description>
+    <Categories>Themes</Categories>
+  </Metadata>
+  <Installation><InstallationTarget Id="Microsoft.VisualStudio.Code" /></Installation>
+  <Dependencies />
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+  </Assets>
+</PackageManifest>
